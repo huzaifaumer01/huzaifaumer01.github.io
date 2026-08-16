@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Huzaifa Umer | Senior iOS Developer</title>
+  <meta name="description" content="Huzaifa Umer is a Senior iOS Developer with 10 years of experience building secure, scalable and production-grade iOS applications." />
+  <meta name="author" content="Huzaifa Umer" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Huzaifa Umer | Senior iOS Developer" />
+  <meta property="og:description" content="Senior iOS Developer with 10 years of experience building secure, scalable and production-grade iOS applications across fintech, healthcare, research and on-demand platforms." />
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Huzaifa Umer | Senior iOS Developer" />
+  <meta name="twitter:description" content="Senior iOS Developer with 10 years of experience building secure, scalable and production-grade iOS applications." />
+  <meta name="twitter:image" content="assets/images/og-image.png" />
+
+  <!-- Favicon (inline SVG, no external asset required) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a84ff'/%3E%3Ctext x='16' y='22' font-family='-apple-system,Helvetica,Arial' font-size='17' font-weight='600' fill='white' text-anchor='middle'%3EHU%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a84ff'/%3E%3Ctext x='16' y='22' font-family='-apple-system,Helvetica,Arial' font-size='17' font-weight='600' fill='white' text-anchor='middle'%3EHU%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__brand" aria-label="Huzaifa Umer — home">
+        <span class="nav__brand-mark" aria-hidden="true">HU</span>
+        <span class="nav__brand-text">Huzaifa Umer</span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume.pdf" class="btn btn--sm btn--primary nav__resume" download>Download Resume</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0-13v2m0 14v2M4 12H2m20 0h-2M5.6 5.6 4.2 4.2m15.6 15.6-1.4-1.4M18.4 5.6l1.4-1.4M4.2 19.8l1.4-1.4"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav__scrim" id="nav-scrim" hidden></div>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal" data-reveal>Rawalpindi, Pakistan &middot; Available for senior iOS roles</p>
+        <h1 class="hero__name reveal" data-reveal>Huzaifa Umer</h1>
+        <p class="hero__title reveal" data-reveal>Senior iOS Developer</p>
+        <p class="hero__headline reveal" data-reveal>10 Years of Building Production-Grade iOS Applications</p>
+        <p class="hero__desc reveal" data-reveal>
+          Designing and developing secure, scalable and high-quality mobile experiences
+          across fintech, healthcare, research and on-demand platforms.
+        </p>
+
+        <div class="hero__cta reveal" data-reveal>
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="assets/resume.pdf" class="btn btn--ghost" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+            Download Resume
+          </a>
+        </div>
+
+        <ul class="hero__social reveal" data-reveal>
+          <li><a href="https://github.com/huzaifaumer01" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.4-4-2.4-6-3m12 5v-3.5a3 3 0 0 0-.9-2.3c3-.3 6.2-1.5 6.2-6.8a5.3 5.3 0 0 0-1.5-3.7 5 5 0 0 0-.1-3.7s-1.2-.4-3.9 1.4a13.4 13.4 0 0 0-7 0C6.1 1.9 4.9 2.3 4.9 2.3a5 5 0 0 0-.1 3.7 5.3 5.3 0 0 0-1.5 3.7c0 5.3 3.2 6.5 6.2 6.8a3 3 0 0 0-.9 2.3V22"/></svg>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/huzaifa-umer-1355b7a1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4V9h4v1.5A6 6 0 0 1 16 8Z"/><rect x="2" y="9" width="4" height="11"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a></li>
+          <li><a href="mailto:developer.huzaifaumer@gmail.com" aria-label="Email Huzaifa Umer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__tag">About</span>
+          <h2 class="section__title">A decade shipping iOS at production scale</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__body reveal" data-reveal>
+            <p class="about__lead">
+              I'm a Senior iOS Developer with 10 years of professional experience designing,
+              building and deploying production-grade iOS applications using Swift, UIKit and
+              Clean Architecture.
+            </p>
+            <p>
+              My work spans high-traffic platforms and scalable mobile solutions, with deep
+              hands-on experience in third-party SDK integration, performance optimization,
+              security and pixel-perfect interfaces. I care about maintainable architecture,
+              reliable delivery and building software that holds up under real-world load.
+            </p>
+            <p>
+              Alongside individual delivery, I focus on cross-functional collaboration and
+              mentoring — working closely with design, backend and platform teams to ship
+              cohesive products. While iOS is my primary specialization, I also have hands-on
+              experience with <strong>Android</strong> and <strong>React Native</strong>.
+            </p>
+          </div>
+
+          <aside class="about__panel reveal" data-reveal>
+            <h3 class="about__panel-title">Core focus</h3>
+            <ul class="about__tags">
+              <li>Swift</li>
+              <li>UIKit</li>
+              <li>SwiftUI</li>
+              <li>Clean Architecture</li>
+              <li>Secure authentication</li>
+              <li>API integrations</li>
+              <li>Third-party SDKs</li>
+              <li>Performance optimization</li>
+              <li>Cross-functional collaboration</li>
+              <li>Mentoring</li>
+            </ul>
+            <p class="about__note">Also experienced with Android &amp; React Native — iOS remains my primary specialization.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE TIMELINE ===================== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__tag">Experience</span>
+          <h2 class="section__title">Career timeline</h2>
+          <p class="section__sub">Ten years across three companies, building secure fintech, healthcare, research, emergency-response and on-demand platforms.</p>
+        </header>
+
+        <ol class="timeline">
+          <!-- Armup -->
+          <li class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__period">Feb 2023 — Present</span>
+                <span class="timeline__badge timeline__badge--fintech">Fintech</span>
+              </div>
+              <h3 class="timeline__role">Senior iOS Developer</h3>
+              <p class="timeline__company">Armup <span aria-hidden="true">·</span> <span class="timeline__loc">Pakistan</span></p>
+              <p class="timeline__para">
+                I lead secure fintech and mobile-infrastructure work across a crypto exchange and its
+                companion transaction authenticator, both architected with <strong>VIPER</strong>. I architected
+                and developed the <strong>Arm Transaction Authenticator</strong> and the secure authentication
+                flows that verify crypto withdrawal transactions, while continuing to maintain and enhance the
+                Armup crypto exchange application.
+              </p>
+              <p class="timeline__para">
+                Much of my focus is on security and real-time reliability — JWT-based authorization, Face ID
+                biometrics, device binding and multi-factor verification, with sensitive data protected through
+                Keychain Services and encryption best practices. I developed secure mobile-to-mobile transaction
+                verification over Apple Multipeer Connectivity for encrypted peer-to-peer data exchange, and
+                delivered real-time transaction updates through push notifications, deep linking and
+                backend-driven event workflows. Alongside this I build reusable UI components and work closely
+                with design, backend and Android teams on API contracts to improve reliability, scalability and
+                security.
+              </p>
+            </div>
+          </li>
+
+          <!-- Troon -->
+          <li class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__period">Dec 2019 — Feb 2023</span>
+                <span class="timeline__badge timeline__badge--health">Healthcare · Research · Emergency</span>
+              </div>
+              <h3 class="timeline__role">Senior iOS Developer</h3>
+              <p class="timeline__company">Troon Technologies <span aria-hidden="true">·</span> <span class="timeline__loc">Islamabad, Pakistan</span></p>
+              <p class="timeline__para">
+                I worked cross-functionally on production applications spanning healthcare management,
+                behavioral research and emergency response, building and maintaining native iOS and Android
+                apps across the portfolio — from evidence-based digestive health to medical-grade wearable
+                research and offline-first emergency command centers.
+              </p>
+              <p class="timeline__para">
+                For behavioral research I integrated the <strong>Empatica E4</strong> medical-grade wearable for
+                real-time physiological data collection, implementing automated and deviation-based survey
+                scheduling and custom data-export pipelines. I also engineered offline-first workflows for
+                emergency-response operations in low-connectivity environments, and consistently drove stability
+                improvements, performance optimization and user-experience refinements across the apps I shipped.
+              </p>
+              <p class="timeline__aside">Selected apps &mdash; Time2Feel, Health Pro Solutions and MCBCEM &mdash; are featured in <a href="#projects">Featured Work</a>.</p>
+            </div>
+          </li>
+
+          <!-- Vizteck -->
+          <li class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__period">Mar 2016 — Dec 2019</span>
+                <span class="timeline__badge timeline__badge--ondemand">On-Demand · E-Commerce</span>
+              </div>
+              <h3 class="timeline__role">iOS Developer</h3>
+              <p class="timeline__company">Vizteck Solutions <span aria-hidden="true">·</span> <span class="timeline__loc">Islamabad, Pakistan</span></p>
+              <p class="timeline__para">
+                I pioneered the company's on-demand application division and architected the reusable iOS
+                frameworks that underpinned it, building scalable components that accelerated the development
+                of each new on-demand product.
+              </p>
+              <p class="timeline__para">
+                Across the portfolio I delivered real-time tracking, live status updates and user–provider
+                communication using CoreLocation, Google Maps and Socket.IO, and integrated payment gateways,
+                authentication systems and push notifications into the shared framework layer.
+              </p>
+              <p class="timeline__aside">Shipped eight on-demand apps &mdash; explore them in <a href="#projects">Featured Work</a>.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__tag">Featured Work</span>
+          <h2 class="section__title">Featured Projects</h2>
+          <p class="section__sub">A selection of iOS applications I've developed, featuring a range of functionalities and designs.</p>
+        </header>
+
+        <div class="projects">
+          <!-- 1 · ARMF -->
+          <article class="project reveal" data-reveal data-project="armf" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon proj-icon--acronym" style="--g1:#16a34a;--g2:#059669;" aria-hidden="true">ARMF</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">Senior iOS Developer</span></div>
+              <h3 class="project__title">ARMF</h3>
+              <p class="project__desc">ARMF is a fintech platform that allows you to transfer money internationally within minutes. Our money transfer app offers affordable transfer fees, the best exchange rates, and zero hidden fees — making it ideal for both individuals and businesses operating across borders.</p>
+              <ul class="project__stack"><li>Swift</li><li>REST APIs</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">Cross-Border</span><span class="project__fact-cap">Payments</span></div>
+                <div class="project__fact"><span class="project__fact-term">Instant</span><span class="project__fact-cap">Transfers</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 · Arm Transaction Authenticator -->
+          <article class="project reveal" data-reveal data-project="arm-authenticator" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon" style="--g1:#2563eb;--g2:#4f46e5;" aria-hidden="true">AT</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">Senior iOS Developer</span></div>
+              <h3 class="project__title">Arm Transaction Authenticator</h3>
+              <p class="project__desc">A dedicated iOS authenticator that verifies crypto withdrawal transactions with hardware-backed security and encrypted peer-to-peer confirmation.</p>
+              <ul class="project__stack"><li>Swift</li><li>VIPER</li><li>Multipeer</li><li>Face ID</li><li class="project__stack-more">+1</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">Crypto</span><span class="project__fact-cap">Fintech</span></div>
+                <div class="project__fact"><span class="project__fact-term">Multipeer</span><span class="project__fact-cap">P2P Security</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 · Armup Crypto Exchange -->
+          <article class="project reveal" data-reveal data-project="armup-exchange" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon" style="--g1:#0ea5e9;--g2:#2563eb;" aria-hidden="true">AC</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">Senior iOS Developer</span></div>
+              <h3 class="project__title">Armup Crypto Exchange</h3>
+              <p class="project__desc">Maintained and enhanced a production crypto exchange iOS app with secure authorization and real-time updates.</p>
+              <ul class="project__stack"><li>Swift</li><li>VIPER</li><li>JWT</li><li>Push</li><li class="project__stack-more">+1</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">Crypto</span><span class="project__fact-cap">Exchange</span></div>
+                <div class="project__fact"><span class="project__fact-term">VIPER</span><span class="project__fact-cap">Architecture</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 · Time2Feel -->
+          <article class="project reveal" data-reveal data-project="time2feel" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon" style="--g1:#14b8a6;--g2:#6366f1;" aria-hidden="true">T2</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">iOS &amp; Android</span></div>
+              <h3 class="project__title">Time2Feel</h3>
+              <p class="project__desc">Native iOS and Android apps supporting behavioral research with medical-grade wearable data collection.</p>
+              <ul class="project__stack"><li>Swift</li><li>Android</li><li>Empatica E4</li><li>Real-time</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">Wearable</span><span class="project__fact-cap">Research</span></div>
+                <div class="project__fact"><span class="project__fact-term">Real-Time</span><span class="project__fact-cap">Data Capture</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 · Health Pro Solutions -->
+          <article class="project reveal" data-reveal data-project="health-pro" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon" style="--g1:#10b981;--g2:#0891b2;" aria-hidden="true">HP</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">Senior iOS Developer</span></div>
+              <h3 class="project__title">Health Pro Solutions</h3>
+              <p class="project__desc">A native Swift healthcare workforce-management platform for providers and administrators.</p>
+              <ul class="project__stack"><li>Swift</li><li>REST APIs</li><li>Real-time</li><li>Documents</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">Workforce</span><span class="project__fact-cap">Healthcare</span></div>
+                <div class="project__fact"><span class="project__fact-term">Real-Time</span><span class="project__fact-cap">Communication</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 · MCBCEM / ECC -->
+          <article class="project reveal" data-reveal data-project="mcbcem" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon" style="--g1:#f97316;--g2:#ef4444;" aria-hidden="true">MC</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">iOS &amp; Android</span></div>
+              <h3 class="project__title">MCBCEM / ECC</h3>
+              <p class="project__desc">Offline-first emergency-response apps for wildfire and flood operations in low-connectivity environments, with Starlink integration.</p>
+              <ul class="project__stack"><li>Swift</li><li>Android</li><li>Offline-first</li><li>Starlink</li><li class="project__stack-more">+1</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">Offline-First</span><span class="project__fact-cap">Emergency</span></div>
+                <div class="project__fact"><span class="project__fact-term">Starlink</span><span class="project__fact-cap">Connectivity</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 · Midriva -->
+          <article class="project reveal" data-reveal data-project="midriva" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon" style="--g1:#8b5cf6;--g2:#ec4899;" aria-hidden="true">M</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">iOS Developer</span></div>
+              <h3 class="project__title">Midriva &amp; Midriva Driver</h3>
+              <p class="project__desc">A paired rider and driver on-demand platform with real-time tracking and user–provider communication.</p>
+              <ul class="project__stack"><li>Swift</li><li>CoreLocation</li><li>Google Maps</li><li>Socket.IO</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">On-Demand</span><span class="project__fact-cap">Mobility</span></div>
+                <div class="project__fact"><span class="project__fact-term">Socket.IO</span><span class="project__fact-cap">Live Tracking</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 · OSN+ -->
+          <article class="project reveal" data-reveal data-project="osn-plus" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon proj-icon--acronym" style="--g1:#7c3aed;--g2:#6d28d9;" aria-hidden="true">OSN+</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">iOS Developer</span></div>
+              <h3 class="project__title">OSN+</h3>
+              <p class="project__desc">Premium MENA OTT streaming platform — improved playback reliability, app stability, FairPlay DRM, custom HLS streaming and crash-resolution workflows.</p>
+              <ul class="project__stack"><li>FairPlay DRM</li><li>HLS</li><li>Playback</li><li>Stability</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">OTT</span><span class="project__fact-cap">Streaming</span></div>
+                <div class="project__fact"><span class="project__fact-term">FairPlay</span><span class="project__fact-cap">DRM</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 · OSNtv -->
+          <article class="project reveal" data-reveal data-project="osn-tv" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon proj-icon--acronym" style="--g1:#2563eb;--g2:#6d28d9;" aria-hidden="true">OSNtv</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">iOS Developer</span></div>
+              <h3 class="project__title">OSNtv</h3>
+              <p class="project__desc">Live TV and on-demand streaming for OSN users across mobile and tablet — smoother Live Channels loading with batched images and metadata.</p>
+              <ul class="project__stack"><li>Live TV</li><li>Batched Loading</li><li>Metadata</li><li>Performance</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">Live TV</span><span class="project__fact-cap">Streaming</span></div>
+                <div class="project__fact"><span class="project__fact-term">Batched</span><span class="project__fact-cap">Loading</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9 · Humanize AI -->
+          <article class="project reveal" data-reveal data-project="humanize-ai" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon" style="--g1:#0891b2;--g2:#6366f1;" aria-hidden="true">HA</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">iOS Developer</span></div>
+              <h3 class="project__title">Humanize AI</h3>
+              <p class="project__desc">An AI writing toolkit — AI Humanizer, Paraphraser, AI Text Detector and Email Writer — that detects AI-generated content and rewrites it into natural, human-sounding prose. Designed and shipped as a fully native Swift/UIKit iOS app.</p>
+              <ul class="project__stack"><li>Swift</li><li>UIKit</li><li>AI</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">AI Writing</span><span class="project__fact-cap">Productivity</span></div>
+                <div class="project__fact"><span class="project__fact-term">Native</span><span class="project__fact-cap">Swift · UIKit</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10 · AI Text to Speech -->
+          <article class="project reveal" data-reveal data-project="ai-tts" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="project__icon-stage">
+              <span class="proj-icon" style="--g1:#f59e0b;--g2:#d97706;" aria-hidden="true">TS</span>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="project__pill">iOS</span><span class="project__role">iOS Developer</span></div>
+              <h3 class="project__title">AI Text to Speech &amp; Audio Books</h3>
+              <p class="project__desc">A voice-reading productivity app that reads aloud text, books, PDFs and documents using AI-generated voices. Designed and shipped as a native Swift/UIKit iOS app with a freemium subscription model.</p>
+              <ul class="project__stack"><li>Swift</li><li>UIKit</li><li>AI Voices</li><li>IAP</li></ul>
+              <div class="project__facts">
+                <div class="project__fact"><span class="project__fact-term">AI Voices</span><span class="project__fact-cap">Text-to-Speech</span></div>
+                <div class="project__fact"><span class="project__fact-term">Freemium</span><span class="project__fact-cap">Subscriptions</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section__subhead reveal" data-reveal id="more-apps">
+          <h3 class="section__subtitle">More production apps</h3>
+          <p class="section__subnote">Additional shipped applications from Troon Technologies and the on-demand division at Vizteck Solutions.</p>
+        </div>
+
+        <div class="mini-grid">
+          <a class="mini reveal" data-reveal href="https://apps.apple.com/us/app/myhealthygut-guided-nutrition/id1148606463" target="_blank" rel="noopener noreferrer">
+            <div class="mini__top">
+              <h4 class="mini__name">MyHealthyGut</h4>
+              <svg class="mini__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p class="mini__cat">Healthcare</p>
+            <p class="mini__role">Troon Technologies · Senior iOS Developer</p>
+            <p class="mini__desc">Evidence-based digestive health platform — stability, Daily Tips, Reminders and UX refinements.</p>
+          </a>
+
+          <a class="mini reveal" data-reveal href="https://apps.apple.com/pk/app/mygroser/id1470372931" target="_blank" rel="noopener noreferrer">
+            <div class="mini__top">
+              <h4 class="mini__name">MyGrocer</h4>
+              <svg class="mini__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p class="mini__cat">On-Demand</p>
+            <p class="mini__role">Vizteck Solutions · iOS Developer</p>
+          </a>
+
+          <a class="mini reveal" data-reveal href="https://apps.apple.com/pk/app/boon4/id1296128580" target="_blank" rel="noopener noreferrer">
+            <div class="mini__top">
+              <h4 class="mini__name">Boon4</h4>
+              <svg class="mini__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p class="mini__cat">On-Demand</p>
+            <p class="mini__role">Vizteck Solutions · iOS Developer</p>
+          </a>
+
+          <a class="mini reveal" data-reveal href="https://apps.apple.com/pk/app/eatenhunt/id1403371518" target="_blank" rel="noopener noreferrer">
+            <div class="mini__top">
+              <h4 class="mini__name">Eatenhunt</h4>
+              <svg class="mini__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p class="mini__cat">On-Demand</p>
+            <p class="mini__role">Vizteck Solutions · iOS Developer</p>
+          </a>
+
+          <a class="mini reveal" data-reveal href="https://apps.apple.com/us/app/mobimover/id1361030831" target="_blank" rel="noopener noreferrer">
+            <div class="mini__top">
+              <h4 class="mini__name">MobiMover</h4>
+              <svg class="mini__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p class="mini__cat">On-Demand</p>
+            <p class="mini__role">Vizteck Solutions · iOS Developer</p>
+          </a>
+
+          <a class="mini reveal" data-reveal href="https://apps.apple.com/us/app/work2day/id1370780039" target="_blank" rel="noopener noreferrer">
+            <div class="mini__top">
+              <h4 class="mini__name">Work2Day</h4>
+              <svg class="mini__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p class="mini__cat">On-Demand</p>
+            <p class="mini__role">Vizteck Solutions · iOS Developer</p>
+          </a>
+
+          <a class="mini reveal" data-reveal href="https://apps.apple.com/pk/app/toolbelt-pro/id1420484856" target="_blank" rel="noopener noreferrer">
+            <div class="mini__top">
+              <h4 class="mini__name">ToolBelt Pro</h4>
+              <svg class="mini__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p class="mini__cat">On-Demand</p>
+            <p class="mini__role">Vizteck Solutions · iOS Developer</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__tag">Expertise</span>
+          <h2 class="section__title">Skills &amp; tooling</h2>
+        </header>
+
+        <div class="skills">
+          <div class="skill-card reveal" data-reveal>
+            <h3>Core iOS</h3>
+            <ul><li>Swift</li><li>UIKit</li><li>SwiftUI</li><li>Xcode</li><li>CocoaTouch</li><li>Auto Layout</li><li>Storyboards</li><li>XIB</li><li>Programmatic UI</li><li>App Lifecycle</li></ul>
+          </div>
+          <div class="skill-card reveal" data-reveal>
+            <h3>Architecture &amp; Patterns</h3>
+            <ul><li>MVC</li><li>MVVM</li><li>Clean Architecture</li><li>VIPER</li><li>Singleton</li><li>Delegation</li><li>Observer</li></ul>
+          </div>
+          <div class="skill-card reveal" data-reveal>
+            <h3>Frameworks &amp; APIs</h3>
+            <ul><li>CoreData</li><li>CoreLocation</li><li>WebViews</li><li>Multipeer Connectivity</li><li>In-App Purchases</li><li>Push Notifications</li><li>RESTful APIs</li><li>Multi-threading</li></ul>
+          </div>
+          <div class="skill-card reveal" data-reveal>
+            <h3>Third-Party SDKs</h3>
+            <ul><li>Firebase</li><li>Crashlytics</li><li>Dynamic Links</li><li>FCM Push</li><li>Google Analytics</li><li>Google Maps</li><li>Alamofire</li><li>Twilio</li><li>SDWebImage</li><li>Socket.IO</li></ul>
+          </div>
+          <div class="skill-card skill-card--accent reveal" data-reveal>
+            <h3>Security</h3>
+            <ul><li>JWT authentication</li><li>Face ID / biometrics</li><li>Device binding</li><li>Multi-factor verification</li><li>Keychain Services</li><li>Encryption best practices</li><li>Secure transaction handling</li></ul>
+          </div>
+          <div class="skill-card reveal" data-reveal>
+            <h3>Development &amp; Delivery</h3>
+            <ul><li>Git</li><li>GitHub</li><li>GitLab</li><li>Bitbucket</li><li>GitHub Actions</li><li>Xcode Cloud</li><li>TestFlight</li><li>CocoaPods</li><li>Sourcetree</li><li>Jira</li><li>Slack</li><li>Trello</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ENGINEERING HIGHLIGHTS ===================== -->
+    <section class="section" id="engineering">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__tag">Engineering</span>
+          <h2 class="section__title">What I build well</h2>
+        </header>
+
+        <div class="highlights">
+          <article class="highlight reveal" data-reveal>
+            <div class="highlight__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 7.3 8 9 4.6-1.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Secure Mobile Authentication</h3>
+            <p>JWT authorization, Face ID, device binding and multi-factor verification for high-stakes fintech flows.</p>
+          </article>
+          <article class="highlight reveal" data-reveal>
+            <div class="highlight__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6"/></svg></div>
+            <h3>Peer-to-Peer Communication</h3>
+            <p>Apple Multipeer Connectivity for secure, encrypted mobile-to-mobile transaction verification.</p>
+          </article>
+          <article class="highlight reveal" data-reveal>
+            <div class="highlight__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></div>
+            <h3>Real-Time Systems</h3>
+            <p>Push notifications, deep linking, Socket.IO and real-time transaction and status updates.</p>
+          </article>
+          <article class="highlight reveal" data-reveal>
+            <div class="highlight__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div>
+            <h3>Healthcare &amp; Research</h3>
+            <p>Healthcare management, behavioral research and wearable physiological data collection.</p>
+          </article>
+          <article class="highlight reveal" data-reveal>
+            <div class="highlight__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><path d="M12 19.5h.01"/><path d="m3 3 18 18"/></svg></div>
+            <h3>Offline-First Applications</h3>
+            <p>Mobile workflows designed to operate reliably in low-connectivity environments.</p>
+          </article>
+          <article class="highlight reveal" data-reveal>
+            <div class="highlight__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 8.5 4.5L12 12 3.5 7.5 12 3Z"/><path d="m3.5 12 8.5 4.5 8.5-4.5"/><path d="m3.5 16.5 8.5 4.5 8.5-4.5"/></svg></div>
+            <h3>Scalable iOS Architecture</h3>
+            <p>Hands-on experience with MVC, MVVM, Clean Architecture and VIPER.</p>
+          </article>
+        </div>
+
+        <!-- Architecture subsection -->
+        <div class="architecture reveal" data-reveal>
+          <div class="architecture__intro">
+            <h3 class="architecture__title">Architecture &amp; Engineering</h3>
+            <p>I choose architecture to fit the problem — from pragmatic MVC and MVVM through to full Clean Architecture and VIPER on larger, security-critical products. The layered model below reflects how I structure production iOS apps for testability, separation of concerns and long-term maintainability.</p>
+            <ul class="architecture__patterns">
+              <li><strong>MVC</strong><span>Pragmatic baseline</span></li>
+              <li><strong>MVVM</strong><span>Bindable presentation</span></li>
+              <li><strong>Clean Architecture</strong><span>Boundaries &amp; use cases</span></li>
+              <li><strong>VIPER</strong><span>Modular, testable at scale</span></li>
+            </ul>
+          </div>
+
+          <div class="archdiagram" role="img" aria-label="Layered iOS architecture diagram: UI layer, presentation layer, domain layer and data layer, from top to bottom.">
+            <div class="archlayer archlayer--ui">
+              <span class="archlayer__name">UI Layer</span>
+              <span class="archlayer__desc">Views · View Controllers · SwiftUI</span>
+            </div>
+            <div class="archlayer__arrow" aria-hidden="true"></div>
+            <div class="archlayer archlayer--presentation">
+              <span class="archlayer__name">Presentation Layer</span>
+              <span class="archlayer__desc">Presenters · ViewModels · Routers</span>
+            </div>
+            <div class="archlayer__arrow" aria-hidden="true"></div>
+            <div class="archlayer archlayer--domain">
+              <span class="archlayer__name">Domain Layer</span>
+              <span class="archlayer__desc">Interactors · Use Cases · Entities</span>
+            </div>
+            <div class="archlayer__arrow" aria-hidden="true"></div>
+            <div class="archlayer archlayer--data">
+              <span class="archlayer__name">Data Layer</span>
+              <span class="archlayer__desc">Repositories · REST APIs · CoreData · Keychain</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INDUSTRIES ===================== -->
+    <section class="section section--alt" id="industries">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="section__tag">Industries</span>
+          <h2 class="section__title">Domains I've shipped in</h2>
+        </header>
+        <ul class="industries">
+          <li class="industry reveal" data-reveal><span class="industry__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 8h4v4"/></svg></span>Fintech</li>
+          <li class="industry reveal" data-reveal><span class="industry__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Healthcare</li>
+          <li class="industry reveal" data-reveal><span class="industry__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 8a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-8V3"/><path d="M7.5 15h9"/></svg></span>Medical Research</li>
+          <li class="industry reveal" data-reveal><span class="industry__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v5M12 18h.01"/></svg></span>Emergency Response</li>
+          <li class="industry reveal" data-reveal><span class="industry__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>On-Demand Services</li>
+          <li class="industry reveal" data-reveal><span class="industry__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></span>E-Commerce</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="education reveal" data-reveal>
+          <div class="education__col">
+            <span class="section__tag">Education</span>
+            <h2 class="section__title">Education</h2>
+            <div class="education__item">
+              <h3>Bachelor's Degree in Computer Science</h3>
+              <p class="education__org">Barani Institute of Information Technology</p>
+              <p class="education__meta">2012 — 2016 <span aria-hidden="true">·</span> Rawalpindi, Pakistan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="contact reveal" data-reveal>
+          <div class="contact__intro">
+            <span class="section__tag">Get in touch</span>
+            <h2 class="section__title">Let's Build Something Great</h2>
+            <p class="contact__desc">Interested in discussing a mobile engineering opportunity, product idea, or technical collaboration?</p>
+            <div class="contact__cta">
+              <a href="mailto:developer.huzaifaumer@gmail.com" class="btn btn--primary">Email Me</a>
+              <a href="assets/resume.pdf" class="btn btn--ghost" download>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+                Download Resume
+              </a>
+            </div>
+          </div>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__label">Email</span>
+              <a href="mailto:developer.huzaifaumer@gmail.com">developer.huzaifaumer@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact__label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/huzaifa-umer-1355b7a1" target="_blank" rel="noopener noreferrer">linkedin.com/in/huzaifa-umer</a>
+            </li>
+            <li>
+              <span class="contact__label">GitHub</span>
+              <a href="https://github.com/huzaifaumer01" target="_blank" rel="noopener noreferrer">github.com/huzaifaumer01</a>
+            </li>
+            <li class="contact__secondary">
+              <span class="contact__label">Phone</span>
+              <a href="tel:+923145560068">+92 3145560068</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__name">Huzaifa Umer</span>
+        <span class="footer__role">Senior iOS Developer</span>
+        <p class="footer__tag">Building secure, scalable and production-grade mobile experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume.pdf" download>Resume</a>
+      </nav>
+    </div>
+    <div class="container footer__base">
+      <p>© 2026 Huzaifa Umer</p>
+      <button class="footer__top" type="button" id="back-to-top" aria-label="Back to top">Back to top ↑</button>
+    </div>
+  </footer>
+
+  <!-- ===================== PROJECT DETAIL MODAL ===================== -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <header class="modal__head">
+        <div class="modal__brand">
+          <span class="modal__icon" id="modal-icon" aria-hidden="true"></span>
+          <h2 class="modal__title" id="modal-title"></h2>
+        </div>
+        <button class="modal__close" id="modal-close" type="button" aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div class="modal__body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/projects.js" defer></script>
+</body>
+</html>
