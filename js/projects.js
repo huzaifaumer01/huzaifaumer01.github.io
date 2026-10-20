@@ -6,8 +6,7 @@
   "use strict";
 
   /* ---------- Project data ----------
-     OSNtv is the full reference (content + impact metrics provided by Huzaifa).
-     Other entries are assembled strictly from documented facts — no invented
+     Entries are assembled strictly from documented facts — no invented
      metrics, team sizes or ratings. Optional fields are simply omitted. */
   var PROJECTS = {
     "armf": {
@@ -115,50 +114,6 @@
       keyFeatures: ["Real-Time Tracking", "Live Status Updates", "User–Provider Communication", "Payment Integration", "Authentication"],
       techStack: { "Languages": "Swift", "Location": "CoreLocation, Google Maps", "Real-Time": "Socket.IO", "Notifications": "Push Notifications" },
       insights: "Midriva was foundational to my on-demand experience — real-time systems and reusable architecture that could power an entire product family."
-    },
-
-    "osn-plus": {
-      title: "OSN+",
-      icon: { text: "OSN+", g1: "#7c3aed", g2: "#6d28d9", acronym: true },
-      appStore: "https://apps.apple.com/us/app/osn/id862390640",
-      businessGoal: "Deliver a stable, secure premium streaming experience with protected content and smooth playback.",
-      overview: "A premium OTT streaming platform for the MENA region. I focused on playback reliability, app stability and secure content delivery — FairPlay DRM and custom HLS streaming — alongside memory optimization and crash-resolution workflows.",
-      problem: "Premium streaming must protect licensed content and stay stable across long sessions and varying networks, while resolving hard-to-reproduce playback crashes.",
-      solution: "Improved playback reliability and stability, worked with FairPlay DRM and custom HLS streaming, optimized memory usage, and established crash-resolution workflows to keep the experience smooth.",
-      role: "Worked as an iOS Developer on the OSN+ streaming app, improving playback reliability, stability, DRM and streaming performance.",
-      keyFeatures: ["Premium OTT Streaming", "FairPlay DRM", "Custom HLS Streaming", "Playback Reliability", "App Stability", "Memory Optimization", "Crash-Resolution Workflows"],
-      challenges: [
-        { title: "Secure, Reliable Playback", body: "Worked with FairPlay DRM and custom HLS streaming while improving stability and optimizing memory usage for long viewing sessions." },
-        { title: "Crash Resolution", body: "Established crash-resolution workflows to identify, reproduce and fix playback-related failures on a large streaming app." }
-      ],
-      techStack: { "Languages": "Swift", "Streaming": "AVPlayer, HLS", "DRM": "FairPlay", "Focus": "Stability, memory, crash resolution" },
-      insights: "OSN+ strengthened my expertise in secure, high-quality video playback and in the disciplined debugging that large streaming apps demand."
-    },
-
-    "osn-tv": {
-      title: "OSNtv",
-      icon: { text: "OSNtv", g1: "#2563eb", g2: "#6d28d9", acronym: true },
-      appStore: "https://apps.apple.com/ae/app/myosntv/id6737794176",
-      businessGoal: "Deliver a secure premium streaming experience capable of protecting licensed content while providing smooth playback across varying network conditions and supporting premium entertainment features expected from a modern OTT platform.",
-      overview: "OSN TV is a premium OTT streaming platform serving audiences across the Middle East with Live TV and Video-on-Demand content. The application delivers secure premium entertainment using FairPlay DRM while providing a high-quality playback experience through adaptive HLS streaming, Chromecast, AirPlay, and multilingual content support.",
-      problem: "Building a premium streaming application requires balancing playback performance, content protection, adaptive streaming, and user experience. The platform needed a scalable playback architecture that isolated media playback from the UI while supporting FairPlay DRM, Live TV, Chromecast, AirPlay, subtitles, and multiple audio tracks.",
-      solution: "Designed a reusable player abstraction layer built around AVPlayer, integrated FairPlay DRM for protected content, implemented adaptive HLS playback, and developed a modular playback architecture that centralized media controls and simplified feature development across the application.",
-      role: "Worked as a Senior iOS Developer within a 20-member engineering team, implementing streaming features, integrating FairPlay DRM, designing the player abstraction layer, improving playback stability, optimizing memory usage, and collaborating closely with backend engineers, QA, and product teams.",
-      keyFeatures: ["Live TV", "Video on Demand", "FairPlay DRM", "Adaptive HLS Streaming", "Multiple Audio Tracks", "Subtitles", "Chromecast", "AirPlay", "Picture in Picture", "Background Playback", "Playback Resume", "Premium Content"],
-      challenges: [
-        { title: "FairPlay DRM Integration", body: "Implemented Apple's FairPlay Streaming workflow including certificate retrieval, SPC generation, CKC processing, and secure license acquisition while handling playback edge cases such as expired licenses and protected content failures." },
-        { title: "Player Abstraction Layer", body: "Designed a reusable playback architecture where application features communicate with a custom Player Manager instead of directly interacting with AVPlayer. This separation simplified feature development, improved maintainability, and reduced coupling between business logic and media playback." },
-        { title: "Playback Performance & Memory Optimization", body: "Optimized playback initialization, player lifecycle management, and memory usage to improve startup performance while maintaining stable streaming during long playback sessions." }
-      ],
-      contributions: ["Designed and implemented a reusable Player Wrapper architecture.", "Integrated FairPlay DRM for premium protected content.", "Implemented adaptive HLS streaming.", "Developed Live TV and Video-on-Demand playback.", "Integrated Chromecast support.", "Integrated AirPlay support.", "Implemented Picture in Picture playback.", "Added support for multiple audio tracks and subtitles.", "Improved playback stability and memory management.", "Integrated Analytics and Crashlytics.", "Applied MVVM, Coordinator, Clean Architecture, and Repository Pattern throughout the application."],
-      techStack: { "Languages": "Swift", "UI": "SwiftUI", "Architecture": "MVVM, Coordinator, Clean Architecture, Repository Pattern", "Streaming": "AVPlayer, AVFoundation, HLS, Picture in Picture, AirPlay, Chromecast", "DRM": "FairPlay", "Storage": "CoreData", "Cloud": "Firebase, Analytics, Crashlytics" },
-      impact: [
-        { value: "20M+", label: "Downloads" },
-        { value: "4.4★", label: "App Rating" },
-        { value: "Live", label: "TV + VOD" },
-        { value: "FairPlay", label: "DRM" }
-      ],
-      insights: "OSN TV significantly expanded my expertise in premium video streaming and secure content delivery. The most valuable lesson was designing a reusable player abstraction that isolated business logic from AVPlayer, making the playback system easier to extend, test, and maintain while supporting FairPlay DRM, Live TV, AirPlay, Chromecast, and future streaming capabilities."
     },
 
     "humanize-ai": {
